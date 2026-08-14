@@ -1,0 +1,28 @@
+{
+    "documents": [
+        {
+            "id": 1,
+            "name": "HR Policy",
+            "category": "HR",
+            "tags": [
+                "leave",
+                "policy"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "API Standards",
+            "category": "Tech",
+            "tags": [
+                "api",
+                "python",
+                "rules"
+            ]
+        }
+    ],
+    "categories": [
+        "HR",
+        "Tech"
+    ],
+    "saved_at": "2026-08-13 13:42:51"
+}

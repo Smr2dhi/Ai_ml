@@ -1,0 +1,42 @@
+[
+    {
+        "role": "user",
+        "text": "hii"
+    },
+    {
+        "role": "assistant",
+        "text": "you said: hii"
+    },
+    {
+        "role": "user",
+        "text": "c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "assistant",
+        "text": "you said: c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "user",
+        "text": "c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "assistant",
+        "text": "you said: c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "user",
+        "text": "c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "assistant",
+        "text": "you said: c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "user",
+        "text": "c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    },
+    {
+        "role": "assistant",
+        "text": "you said: c:\\Users\\LENOVO\\Desktop\\ai_ml\\.venv\\Scripts\\python.exe c:/Users/LENOVO/Desktop/ai_ml/Assign2/hard1.py"
+    }
+]
