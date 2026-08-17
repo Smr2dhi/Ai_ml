@@ -1,6 +1,6 @@
-from models.student import Student
-from utils import greet
-from models.employee import Employee
+from .models.student import Student
+from .utils import greet
+from .models.employee import Employee
 
 print(greet("Samriddhi"))
 
@@ -11,6 +11,6 @@ print(s1.introduce())
 
 print("-------------")
 e1=Employee("Khushi","Tech")
-print(f"Student cretaed: {e1.name} ({e1.departement})")
+print(f"Employee cretaed: {e1.name} ({e1.departement})")
 
 print(e1.Introduce())

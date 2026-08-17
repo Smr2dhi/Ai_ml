@@ -1,0 +1,1 @@
+from .storage import load_documents,save_documents
