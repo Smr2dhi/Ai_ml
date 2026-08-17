@@ -1,0 +1,1 @@
+from medium_2.utils.storage import save_documents,load_documents
