@@ -1,8 +1,0 @@
-[
-  {"username": "john.doe", "age": "34", "balance": "5000", "withdraw": "1200"},
-  {"username": "12alice", "age": "29", "balance": "4500", "withdraw": "200"},
-  {"username": "bob_smith", "age": "sixteen", "balance": "3000", "withdraw": "500"},
-  {"username": "charlie", "age": "17", "balance": "2500", "withdraw": "100"},
-  {"username": "diana", "age": "40", "balance": "1000", "withdraw": "2500"},
-  {"username": "eva", "age": "31", "balance": "2200"}
-]
