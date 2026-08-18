@@ -1,6 +1,6 @@
-from .models.student import Student,student_from_dict
-from .services.student_service import StudentService
-from .utils.storage import save_students,load_students
+from models.student import Student,student_from_dict
+from services.student_service import StudentService
+from utils.storage import save_students,load_students
 
 service =StudentService()
 while True:

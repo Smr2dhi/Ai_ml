@@ -1,5 +1,5 @@
-from ..utils.storage import load_students,save_students
-from ..models.student import Student,student_from_dict
+from utils.storage import load_students,save_students
+from models.student import Student,student_from_dict
 
 class StudentService:
     def __init__(self):
