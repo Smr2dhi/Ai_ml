@@ -1,0 +1,17 @@
+[
+    {
+        "document_id": 1,
+        "Name": "HR Policy",
+        "Category": "HR"
+    },
+    {
+        "document_id": 2,
+        "Name": "leave Policy",
+        "Category": "HR"
+    },
+    {
+        "document_id": 3,
+        "Name": "Pyton Guide",
+        "Category": "Tech"
+    }
+]
