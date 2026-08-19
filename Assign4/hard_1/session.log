@@ -1,0 +1,6 @@
+2026-08-19 13:02:38,576 | DEBUG | SESSION | Loading students from file
+2026-08-19 13:02:38,576 | INFO | SESSION | Students loaded successfully
+2026-08-19 13:02:43,444 | DEBUG | SESSION | Adding student: sam
+2026-08-19 13:02:43,445 | DEBUG | SESSION | Trying to add student: sam, roll=12
+2026-08-19 13:02:43,446 | INFO | SESSION | Students saved successfully to C:\Users\LENOVO\Desktop\ai_ml\Assign4\hard_1\students.json
+2026-08-19 13:02:43,446 | INFO | SESSION | Student added successfully: sam

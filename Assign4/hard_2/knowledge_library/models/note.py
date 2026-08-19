@@ -16,4 +16,9 @@ class Note:
         return obj_to_dict
 
 def note_from_dict(data):
-    n1=
+    return Note(
+        data["note_id"],
+        data["title"],
+        data["content"],
+        data["category"]
+    )
