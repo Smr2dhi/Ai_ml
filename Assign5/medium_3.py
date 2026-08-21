@@ -60,25 +60,17 @@ def stats():
     }
 
 
-@app.get("/student/count")
+@app.get("/students/count")
 def count():
-    return f"Count: {len(students)}"
+    return len(students)
 
-# @app.get("/students/toppers")
-# def topper_student(limit:int=3):
 
-#     for i in
-
-    
-#     result= sorted(
-
-#     )
 
     
 
 
 @app.get("/students/{student_id}")
-def student_id_func():
+def student_id_func(student_id:int):
     for i in students:
         if i["id"]==student_id:
             return i
