@@ -1,5 +1,5 @@
 from pydantic import BaseModel,Field
-from fastapi import FastAPI
+from fastapi import FastAPI,HTTPException
 
 app=FastAPI()
 
@@ -17,39 +17,100 @@ class ProductService:
 		self.products=[]
 		self.next_id=1
 
-	def get_all(self):
-		pass
 
+	def get_all(self):
+		return self.products
+
+	
 	def get_by_id(self,product_id):
-		pass
+		for data in self.products:
+			if data["product_id"] == product_id:
+				return data
+
+		return None
 
 	def create(self,name,price):
-		pass
+		product={
+			"product_id":self.next_id,
+			"name":name,
+			"price":price,
+		}
+		self.products.append(product)
+		self.next_id+=1
 
+		return product
+
+		
 	def update(self,product_id,name,price):
-		pass
+		for data in self.products:
+			if product_id == data["product_id"]:
+				data["name"]=name
+				data["price"]=price
+				return data
+		return None
+
+			
 
 	def delete(self,product_id):
-		pass
+		for data in self.products:
+			if data["product_id"]==product_id:
+				self.products.remove(data)
+				return data
 
-product_service=ProductService
+		return None
 
-@app.get("/products")
+
+product_service=ProductService()
+
+
+@app.get("/products",response_model=list[ProductResponse])
 def get_products():
-	return product_service.get_all()
 
-@app.get("/products/{id}")
-def get_Product_by_id():
-	return product_service.get_by_id()
+	products=product_service.get_all()
 
-@app.post("/products")
-def add_products():
-	return product_service.create()
+	if not products:
+		raise HTTPException(status_code=404,detail="no products found")
+	return products
 
-@app.put("/products/{id}")
-def update_product():
-	return product_service.update()
+@app.get("/products/{product_id}",response_model=ProductResponse)
+def get_product_by_id(product_id :int):
 
-@app.delete("/products/{id}")
-def delete_product():
-	return product_service.delete()
+	product=product_service.get_by_id(product_id)
+
+	if product is None:
+		raise HTTPException(status_code=404,detail="Product not found")
+	return product
+	
+
+
+@app.post("/products",response_model=ProductResponse)
+def add_products(product:ProductCreateRequest):
+
+	return product_service.create(
+		product.name,
+		product.price
+	)
+	
+
+
+@app.put("/products/{product_id}",response_model=ProductResponse)
+def update_product(product_id:int,product:ProductCreateRequest):
+
+	updated=product_service.update(
+		product_id,product.name,product.price)
+
+	if updated is None:
+		raise HTTPException(status_code=404,detail="product not found")
+
+	return updated
+
+@app.delete("/products/{product_id}",response_model=ProductResponse)
+def delete_product(product_id:int):
+
+	deleted_product=product_service.delete(product_id)
+
+	if deleted_product==None:
+		raise HTTPException(status_code=404,detail="Product not found")
+
+	return deleted_product
+

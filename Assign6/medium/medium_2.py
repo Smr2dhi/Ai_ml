@@ -21,17 +21,13 @@ products=[]
 @app.post("/products",response_model=ProductResponse)
 def product_request(product:ProductCreateRequest):
     product_id=len(products)+1
-    name=product.name
-    price=product.price
-    category=product.category
-    stock=product.stock
-
+    
     product_response={
         "product_id":product_id,
-        "name":name,
-        "price":price,
-        "category":category,
-        "stock":stock
+        "name":product.name,
+        "price":product.price,
+        "category":product.category,
+        "stock":product.stock
     }
     products.append(product_response)
 

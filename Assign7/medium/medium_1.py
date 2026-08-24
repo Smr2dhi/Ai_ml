@@ -47,8 +47,8 @@ class UserRegistrationRequest(BaseModel):
 	@field_validator("phone")
 	@classmethod
 	def validate_phone(cls, value):
-		for char in value:
-			if not char.isdigit():
+		for data in value:
+			if not data.isdigit():
 				raise ValueError("Phone must contain only digits")
 		return value
 
