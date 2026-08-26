@@ -23,10 +23,10 @@ def build_profile(catalog,watched_ids):
             
     return profile
            
-def score_title(title,profile):
-    score=0
-    for tag in title:
-        pass
+# def score_title(title,profile):
+#     score=0
+#     for data in catalog:
+#         if profile["tag"]
 
 
 def recommend(catalog,watched_ids,top_n=3):

@@ -28,3 +28,5 @@ class DocumentResponse(BaseModel):
     category:str
     file_size:int
 
+class AskRequest:
+    question:str=Field(min_length=3)

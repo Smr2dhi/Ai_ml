@@ -1,5 +1,5 @@
 from Assign7.hard_3.services.document_service import DocumentService
-from Assign7.hard_3.models.document import DocumentCreateRequest,DocumentResponse
+from Assign7.hard_3.models.document import DocumentCreateRequest,DocumentResponse,AskRequest
 from Assign7.hard_3.utils.logging import logger
 from fastapi import FastAPI,HTTPException
 
@@ -81,3 +81,7 @@ def delete_document(document_id:int):
         )
     logger.warning("student found")
     return document
+
+@app.post("/ask")
+def ask_question(request:AskRequest):
+    return 
