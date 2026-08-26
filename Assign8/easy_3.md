@@ -1,0 +1,1 @@
+ | # | Industry | Business Problem | AI Solution | Business Value | AI Category. 
