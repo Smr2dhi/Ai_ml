@@ -1,9 +1,14 @@
+
 import logging
+import os
 
-root_logger=logging.getLogger()
-root_logger.setLevel(logging.DEBUG)
+log_file=os.path.join(os.path.dirname(__file__),"hard_3.log")
 
-app_handler=logging.FileHandler("app.log")
-app_handler.setLevel(logging.WARNING)
-root_logger.addHandler(app_handler)
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format="%(asctime)s -%(levelname)s - %(message)s"
 
+)
+
+logger=logging.getLogger(__name__)

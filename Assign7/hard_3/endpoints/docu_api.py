@@ -1,6 +1,6 @@
 from Assign7.hard_3.services.document_service import DocumentService
 from Assign7.hard_3.models.document import DocumentCreateRequest,DocumentResponse
-
+from Assign7.hard_3.utils.logging import logger
 from fastapi import FastAPI,HTTPException
 
 
@@ -19,6 +19,7 @@ def get_document(category:str=None):
             status_code=404,
             detail="Document not found"
         )
+    logger.warning("No document found")
     return documents
 
 @app.get("/documents/{document_id}",response_model=DocumentResponse)
@@ -30,6 +31,7 @@ def get_documents_by_id(document_id:int):
         return document
 
     else:
+        logger.warning("No student found")
         raise HTTPException(
             status_code=404,
             detail="missing id"
@@ -44,6 +46,7 @@ def create_document(request:DocumentCreateRequest):
         request.category,
         request.file_size
     )
+    logger.info("studenst created")
     return document
 
 
@@ -56,8 +59,10 @@ def update_document(document_id:int,request:DocumentCreateRequest):
         request.category,
         request.file_size
     )
+    logger.info("studenst updated")
 
     if not document:
+        logger.warning("No student found")
         raise HTTPException(
             status_code=404,
             detail="No such document exists to update"
@@ -69,9 +74,10 @@ def delete_document(document_id:int):
     document=document_obj.delete(document_id)
 
     if not document:
+        logger.warning("No student found")
         raise HTTPException(
             status_code=404,
             detail="No such documnets exists"
         )
-    
+    logger.warning("student found")
     return document

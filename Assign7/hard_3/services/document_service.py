@@ -1,5 +1,5 @@
 from Assign7.hard_3.utils.storage import load_documents,save_documents
-
+from Assign7.hard_3.utils.logging import logger
 
 class DocumentService:
     def __init__(self):
@@ -18,6 +18,7 @@ class DocumentService:
                 for document in self.documents
                   if document["category"]==category
                   ]
+        logger.info("Student found")
         return self.documents
 
     def get_by_id(self,document_id):
@@ -25,6 +26,7 @@ class DocumentService:
             if data["document_id"]==document_id:
                 return data
 
+        logger.warning("No student found")
         return None
 
     def create(self,file_name,category,file_size):
@@ -37,6 +39,7 @@ class DocumentService:
         }
         self.documents.append(document)
         save_documents(self.documents)
+        logger.info("Stuent cretaed---")
 
         self.document_id+=1
 
@@ -46,6 +49,7 @@ class DocumentService:
         document=self.get_by_id(document_id)
 
         if not document:
+            logger.warning("No student found")
             return None
         
         document["file_name"]= file_name
@@ -53,12 +57,14 @@ class DocumentService:
         document["file_size"]=file_size
 
         save_documents(self.documents)
+        logger.info("Stuent updated---")
         return document
 
     def delete(self,document_id):
         document=self.get_by_id(document_id)
 
         if not document :
+            logger.warning("No student found")
             return None
         
         self.documents.remove(document)

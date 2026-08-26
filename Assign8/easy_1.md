@@ -10,7 +10,7 @@ AI
         └── Generative AI
 ```
 |  # 	|  System Justification 	|   Classification 						|   explanation	
-|---	|---						|---									|---	
+|:---	|:---:						|      	:---:				            |  :---:		
 |   1.	|  	payroll system			|  	Traditional Software 				|   Fixed predefined rules, no learning	   	
 |   2.	|  	flags suspicious  		|   Machine Learning 					|   Learns patterns from labeled data	  	
 |   3.	|   Face unlock				|   Deep Learning						| 	Multi-layer neural network on images   	
