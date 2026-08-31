@@ -1,0 +1,24 @@
+2026-08-31 15:58:13,192 - INFO - Application started
+2026-08-31 15:58:13,193 - INFO - Question started --
+2026-08-31 15:58:13,193 - INFO - Checking guardrails for question
+2026-08-31 15:58:13,193 - INFO - Question passed all guardrails
+2026-08-31 15:58:13,193 - INFO - Template is loading---
+2026-08-31 15:58:13,193 - INFO - Q&A template loaded successfully
+2026-08-31 15:58:13,193 - INFO - Prompt sent to LLM
+2026-08-31 15:58:13,193 - INFO - Answer generated
+2026-08-31 15:58:13,193 - INFO - Question started --
+2026-08-31 15:58:13,193 - INFO - Checking guardrails for question
+2026-08-31 15:58:13,194 - WARNING - Prompt injection attempt blocked
+2026-08-31 15:58:13,194 - WARNING - refusal prompt injection
+2026-08-31 15:58:13,194 - INFO - Question started --
+2026-08-31 15:58:13,194 - INFO - Checking guardrails for question
+2026-08-31 15:58:13,194 - WARNING - Personal data request blocked
+2026-08-31 15:58:13,194 - WARNING - Returning personal data refusal
+2026-08-31 15:58:13,194 - INFO - Question started --
+2026-08-31 15:58:13,194 - INFO - Checking guardrails for question
+2026-08-31 15:58:13,194 - WARNING - Out-of-scope question blocked
+2026-08-31 15:58:13,194 - WARNING - Returning out-of-scope refusal
+2026-08-31 15:58:13,194 - INFO - Question started --
+2026-08-31 15:58:13,194 - INFO - Checking guardrails for question
+2026-08-31 15:58:13,194 - WARNING - Question requires human escalation
+2026-08-31 15:58:13,194 - WARNING - Returning human escalation message

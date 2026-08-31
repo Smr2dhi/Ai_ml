@@ -1,0 +1,25 @@
+2026-08-31 15:09:55,286 - ERROR - Unexpected error
+Traceback (most recent call last):
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 103, in <module>
+    main()
+    ~~~~^^
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 82, in main
+    result=extract_with_retry(base_prompt,required_keys)
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 53, in extract_with_retry
+    for attempt in range(1,max+attempts+1):
+                               ^^^^^^^^
+NameError: name 'attempts' is not defined
+2026-08-31 15:10:37,022 - ERROR - Unexpected error
+Traceback (most recent call last):
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 103, in <module>
+    main()
+    ~~~~^^
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 82, in main
+    result=extract_with_retry(base_prompt,required_keys)
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 54, in extract_with_retry
+    response= call_llm(prompt)
+  File "c:\Users\LENOVO\Desktop\ai_ml\Assign10\hard_2.py", line 27, in call_llm
+    min(call_count, len(FAKE_RESPONSES) - 1)]
+        ^^^^^^^^^^
+NameError: name 'call_count' is not defined
+2026-08-31 15:11:08,242 - INFO - Attempt 3: Success

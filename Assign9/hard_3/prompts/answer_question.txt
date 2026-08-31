@@ -1,0 +1,16 @@
+Task:
+Answer the employee's question using only the provided documents.
+
+Question:
+{question}
+
+Documents:
+{documents}
+
+Rules:
+- Use only the information in the provided documents.
+- Do not invent information.
+- Give a concise answer in 3 sentences or fewer.
+- After the answer, add a Source: line naming the document used.
+- If the documents do not contain the answer, reply exactly:
+I do not have enough information in the provided documents.
