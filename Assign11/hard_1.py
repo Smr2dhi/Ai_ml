@@ -85,7 +85,7 @@ async def main():
 
         if question == "":
             continue
-            questions += 1
+        questions += 1
 
         try:
             answer = await generate_reponse(
