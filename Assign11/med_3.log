@@ -1,0 +1,11 @@
+2026-09-03 15:27:51,561 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 15:27:51,570 - INFO - Question: How many paid leave days do employees get?  | Answer: Employees receive 18 days of paid leave per year.
+2026-09-03 15:27:51,571 - WARNING - Blocked question:  
+2026-09-03 15:30:29,117 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 15:30:29,120 - INFO - Question: ceo salary | Answer: I could not find this in the company documents.
+2026-09-03 15:32:05,642 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 15:32:05,686 - INFO - Question: what is 2+2? | Answer: I could not find this in the company documents.
+2026-09-03 16:26:30,005 -_client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 16:26:30,015 -medium_3.py - INFO - Question: 2+2? | Answer: I could not find this in the company documents.
+2026-09-03 16:28:24,697 -_client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 16:28:24,719 -medium_3.py - INFO - Question: wht is prime number | Answer: I could not find this in the company documents.

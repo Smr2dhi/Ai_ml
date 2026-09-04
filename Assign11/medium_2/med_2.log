@@ -1,0 +1,52 @@
+2026-09-03 12:42:12,689 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-03 12:42:12,691 - INFO - Retrying request in 0.390038 seconds
+2026-09-03 12:42:22,400 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 12:42:29,181 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 12:42:29,963 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-03 12:42:29,964 - INFO - Retrying request in 0.415555 seconds
+2026-09-03 12:42:33,954 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:11:57,914 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:11:59,992 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:12:08,079 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:33:18,035 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:33:18,046 - INFO - Ques:What is ai? | Input: 17 | Output: 35 | Total: 373
+2026-09-03 13:33:49,029 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:33:49,033 - INFO - Ques:what is 2+2? | Input: 20 | Output: 6 | Total: 142
+2026-09-03 13:33:53,725 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-03 13:33:53,727 - INFO - Retrying request in 0.446767 seconds
+2026-09-03 13:33:56,937 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 13:33:56,942 - INFO - Ques:what is prime number | Input: 17 | Output: 23 | Total: 286
+2026-09-03 18:46:13,542 - ERROR - Error saved :'AIClient' object has no attribute 'ask'
+2026-09-03 18:47:07,933 - ERROR - Error saved :'AIClient' object has no attribute 'generate_reponse'
+2026-09-03 18:48:05,870 - ERROR - Error saved :'AIClient' object has no attribute 'generate_reponse'
+2026-09-03 18:49:03,091 - ERROR - Error saved :'AIClient' object has no attribute 'generate_reponse'
+2026-09-03 18:51:03,277 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:51:03,301 - INFO - Converstaion saved
+2026-09-03 18:52:04,819 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-03 18:52:04,822 - INFO - Retrying request in 0.447511 seconds
+2026-09-03 18:52:05,639 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-03 18:52:05,641 - INFO - Retrying request in 0.861503 seconds
+2026-09-03 18:52:06,867 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-03 18:52:09,120 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-03 18:52:09,123 - INFO - Retrying request in 0.424903 seconds
+2026-09-03 18:52:09,838 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-03 18:52:09,841 - INFO - Retrying request in 0.761062 seconds
+2026-09-03 18:52:10,859 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-03 18:52:10,862 - WARNING - Sorry llm out of service.please try later
+2026-09-03 18:52:10,864 - INFO - Converstaion saved
+2026-09-03 18:52:38,410 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:52:38,428 - INFO - Converstaion saved
+2026-09-03 18:52:53,263 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:52:53,265 - INFO - Converstaion saved
+2026-09-03 18:53:10,982 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:53:10,989 - INFO - Converstaion saved
+2026-09-03 18:53:27,661 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:53:27,668 - INFO - Converstaion saved
+2026-09-03 18:53:37,730 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:53:37,736 - INFO - Converstaion saved
+2026-09-03 18:53:44,354 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:53:44,360 - INFO - Converstaion saved
+2026-09-03 18:54:08,213 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-03 18:54:08,216 - INFO - Retrying request in 0.469130 seconds
+2026-09-03 18:54:12,617 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 18:54:12,642 - INFO - Converstaion saved
