@@ -1,0 +1,8 @@
+2026-09-06 23:48:52,568 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 23:48:52,600 - INFO - RESPONSE:{
+    "policy_number": "P12345",
+    "customer_name": "John Smith",
+    "premium": "$1200",
+    "coverage_type": "Automobile"
+}
+2026-09-06 23:48:52,600 - INFO - TYPE: <class 'str'>
