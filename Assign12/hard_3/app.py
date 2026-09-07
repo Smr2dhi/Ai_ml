@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
-
-from Assign12.hard_3.models import DocumentOut, AutoTagResult, AskRequest,StructuredAnswer
-from Assign12.hard_3.extractor import ask_for_model
+from utils import logger
+from models import DocumentOut, AutoTagResult, AskRequest,StructuredAnswer
+from extractor import ask_for_model
 
 app=FastAPI()
 
@@ -64,8 +64,6 @@ def health():
         "mode": "mock"}
 
 
-
-
 @app.get("/documents", response_model=list[DocumentOut])
 def get_documents():
     return DOCUMENTS
@@ -73,6 +71,8 @@ def get_documents():
 
 @app.post( "/documents/{doc_id}/auto-tag",response_model=DocumentOut)
 def auto_tag_document(doc_id:int):
+
+    logger.info("Auto-tag request received for document ID: %s", doc_id)
     document=None
 
     for doc in DOCUMENTS:
@@ -81,6 +81,7 @@ def auto_tag_document(doc_id:int):
             break
 
     if document is None:
+        logger.warning("Document not found: %s", doc_id)
         raise HTTPException(status_code=404,detail="Document not found")
 
     prompt = f"""
@@ -111,7 +112,7 @@ def auto_tag_document(doc_id:int):
             - Tags should be lowercase-ish.
             - Return ONLY valid JSON.
             """
-
+    logger.info("Sending document to LLM for auto-tagging")
     try:
         result=ask_for_model(prompt,AutoTagResult,get_tag_mock(doc_id))
 
@@ -120,6 +121,8 @@ def auto_tag_document(doc_id:int):
 
     document["category"] = result.category
     document["tags"] = result.tags
+
+    logger.info("Document updated successfully: %s", document["name"])
 
     return document
 

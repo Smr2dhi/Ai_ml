@@ -1,5 +1,5 @@
-from Assign12.llmClient import ask_llm
-from Assign12.utils import logger
+from llm_client import ask_llm
+from utils import logger
 import json
 from pydantic import ValidationError
 

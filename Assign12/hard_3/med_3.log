@@ -1,0 +1,10 @@
+2026-09-07 15:07:52,835 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-07 15:34:00,820 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-07 15:36:46,121 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-07 15:39:39,542 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-07 15:40:43,457 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-07 15:40:43,470 - _base_client.py - INFO - Retrying request in 0.445354 seconds
+2026-09-07 15:40:46,262 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-07 15:40:46,265 - _base_client.py - INFO - Retrying request in 0.958884 seconds
+2026-09-07 15:40:51,063 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-07 15:40:51,072 - extractor.py - INFO - Attempt 1: successful
