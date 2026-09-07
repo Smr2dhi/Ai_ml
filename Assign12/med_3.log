@@ -1,8 +1,16 @@
-2026-09-06 23:48:52,568 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
-2026-09-06 23:48:52,600 - INFO - RESPONSE:{
-    "policy_number": "P12345",
-    "customer_name": "John Smith",
-    "premium": "$1200",
-    "coverage_type": "Automobile"
-}
-2026-09-06 23:48:52,600 - INFO - TYPE: <class 'str'>
+2026-09-07 12:45:41,875 - hard_2.py - INFO - Attempt 1 : sucessful
+2026-09-07 12:45:41,877 - hard_2.py - INFO - Ticket lasification sucsesful
+2026-09-07 12:46:39,909 - hard_2.py - INFO - Attempt 1 : sucessful
+2026-09-07 12:46:39,909 - hard_2.py - INFO - Ticket lasification sucsesful
+2026-09-07 12:46:55,457 - hard_2.py - INFO - Attempt 1 : sucessful
+2026-09-07 12:46:55,457 - hard_2.py - INFO - Ticket lasification sucsesful
+2026-09-07 14:07:17,929 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-07 14:07:18,085 - extractor.py - INFO - Attempt 1: successful
+2026-09-07 14:07:37,921 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-07 14:07:37,923 - _base_client.py - INFO - Retrying request in 0.392855 seconds
+2026-09-07 14:07:41,133 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-07 14:07:41,136 - extractor.py - INFO - Attempt 1: successful
+2026-09-07 14:07:49,791 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-07 14:07:49,793 - extractor.py - INFO - Attempt 1: successful
+2026-09-07 14:08:31,119 - _client.py - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-07 14:08:31,122 - extractor.py - INFO - Attempt 1: successful

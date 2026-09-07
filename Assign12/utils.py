@@ -9,7 +9,7 @@ log_path=os.path.join(
 logging.basicConfig(
     filename=log_path,
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(filename)s - %(levelname)s - %(message)s"
 )
 
 logger=logging.getLogger()
