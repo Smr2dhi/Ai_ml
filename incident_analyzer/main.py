@@ -23,7 +23,7 @@ def analyze_incident(request: IncidentRequest) -> IncidentAnalysis:
         summary="summary ",
         next_action="Fix issues"
 
-    )
+        )
 
 def main():
     try:
@@ -32,7 +32,8 @@ def main():
 
         incident=IncidentRequest(
             incident_id=incident_id,
-            description=description)
+            description=description
+            )
 
         result=analyze_incident(incident)
         print("Incident analysis")

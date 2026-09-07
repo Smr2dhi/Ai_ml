@@ -51,7 +51,7 @@ class AIClient():
             instructions="You are a helpful assistant. Answer in one sentence.",
             model=OpenAIChatCompletionsModel(
             model=self.model,
-            openai_client=self.client
+            client=self.client
     )
 )
 

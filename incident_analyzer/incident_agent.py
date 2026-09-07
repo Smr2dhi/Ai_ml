@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-
+from incident_analyzer.utils import logger
 from agents import Agent, OpenAIChatCompletionsModel
 from openai import AsyncOpenAI
 
@@ -12,11 +12,13 @@ GEMINI_ENDPOINT = os.getenv("GEMINI_ENDPOINT")
 
 
 if not GEMINI_API_KEY:
+    logger.info("env vars are not configued")
     raise RuntimeError("GEMINI_API_KEY is not set")
 
+logger.info("Calling api")
 client = AsyncOpenAI(api_key=GEMINI_API_KEY,base_url=GEMINI_ENDPOINT)
 
-model = OpenAIChatCompletionsModel(model=GEMINI_MODEL,openai_client=client)
+model = OpenAIChatCompletionsModel(model=GEMINI_MODEL,client=client)
 
 incident_agent = Agent(
     name="Incident Analyzer",
