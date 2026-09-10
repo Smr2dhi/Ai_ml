@@ -2,6 +2,17 @@ from fastapi import FastAPI,UploadFile,File,HTTPException
 from pydantic import BaseModel
 from datetime import datetime, timezone
 from Assign13 import ai_client
+impot logging
+
+log_path=os.join(os.path.dirname(__file__),"app.log")
+
+logging.basicConfig(
+    filename="log_path",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 app=FastAPI(title="AI Knowledge Assistant",description="This is a semantic search engine that uses AI to provide answers to your questions based on the documents you provide.",version="1.0.0")
 
