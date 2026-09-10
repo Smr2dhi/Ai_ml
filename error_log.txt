@@ -1,1 +1,0 @@
-[2026-09-03 18:49:03] ERROR: 'AIClient' object has no attribute 'generate_reponse'
